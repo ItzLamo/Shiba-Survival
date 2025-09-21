@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=4 uid="uid://bep1u015h6xgu"]
+[gd_scene load_steps=13 format=4 uid="uid://bep1u015h6xgu"]
 
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="1_q2cdg"]
 [ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://Terrain (16x16).png" id="2_1imqh"]
 [ext_resource type="PackedScene" uid="uid://dqf7tv1u7dou0" path="res://Our Player/the_player.tscn" id="3_ama5q"]
 [ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="4_q2cdg"]
 [ext_resource type="Texture2D" uid="uid://dmqtlyxf2gqtv" path="res://assets/Door.png" id="5_1imqh"]
+[ext_resource type="Script" uid="uid://dvm56vr7sf7nl" path="res://Scenes/label_2.gd" id="6_64nul"]
+[ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="6_fq0go"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q2cdg"]
 texture = ExtResource("2_1imqh")
@@ -166,6 +168,12 @@ outline_color = Color(0, 0, 0, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64nul"]
 size = Vector2(54.5, 64)
 
+[sub_resource type="LabelSettings" id="LabelSettings_v5d4y"]
+font = ExtResource("6_fq0go")
+outline_size = 10
+outline_color = Color(0.631373, 0.278431, 0.266667, 1)
+shadow_size = 0
+
 [node name="Node" type="Node"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -274,5 +282,19 @@ shape = SubResource("RectangleShape2D_64nul")
 position = Vector2(1104, 344)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("5_1imqh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+scale = Vector2(2, 2)
+transform = Transform2D(2, 0, 0, 2, 0, 0)
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+modulate = Color(1, 1, 0.968627, 1)
+offset_left = 10.5
+offset_top = 10.5
+offset_right = 77.5
+offset_bottom = 33.5
+text = "Coins"
+label_settings = SubResource("LabelSettings_v5d4y")
+script = ExtResource("6_64nul")
 
 [connection signal="body_entered" from="Right_Door" to="The Player" method="_on_right_door_body_entered"]

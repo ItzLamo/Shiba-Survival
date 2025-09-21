@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://bx5lsymwd6owt"]
+[gd_scene load_steps=19 format=4 uid="uid://bx5lsymwd6owt"]
 
 [ext_resource type="Script" uid="uid://dfdudhet70lcm" path="res://Scenes/Right_Game.gd" id="1_5e70r"]
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="1_n5nd6"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://box.tscn" id="5_n3o1e"]
 [ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://spot.tscn" id="6_ms2gs"]
 [ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="8_jtnkp"]
+[ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="8_uexoh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j74td"]
 texture = ExtResource("2_bjxqw")
@@ -312,15 +313,25 @@ sources/0 = SubResource("TileSetAtlasSource_htakn")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5hr5a"]
 size = Vector2(20, 293.214)
 
+[sub_resource type="Theme" id="Theme_uexoh"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_uexoh"]
-font = ExtResource("8_jtnkp")
+font = ExtResource("8_uexoh")
 font_size = 23
 outline_size = 5
 outline_color = Color(0.631373, 0.278431, 0.266667, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_gx2fj"]
+line_spacing = 2.0
+font = ExtResource("8_uexoh")
+font_size = 23
+outline_size = 5
+outline_color = Color(0.631373, 0.278431, 0.266667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jtnkp"]
+line_spacing = 2.0
 font = ExtResource("8_jtnkp")
-font_size = 22
+font_size = 17
 outline_size = 5
 outline_color = Color(0.631373, 0.278431, 0.266667, 1)
 
@@ -452,30 +463,87 @@ position = Vector2(64, -96)
 [node name="AcceptDialog" type="AcceptDialog" parent="Node"]
 title = "Good Job"
 initial_position = 1
-size = Vector2i(116, 100)
+size = Vector2i(200, 288)
+theme = SubResource("Theme_uexoh")
+ok_button_text = ""
+dialog_close_on_escape = false
+
+[node name="MenuButton" type="MenuButton" parent="Node/AcceptDialog"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 262.0
+item_count = 1
+popup/item_0/id = 0
+
+[node name="quit" type="Button" parent="Node/AcceptDialog/MenuButton"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -122.0
+offset_right = 64.0
+offset_bottom = -65.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Quit"
+
+[node name="restart" type="Button" parent="Node/AcceptDialog/MenuButton"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_top = 68.0
+offset_right = 64.0
+offset_bottom = 125.0
+grow_horizontal = 2
+text = "Restart"
+
+[node name="next" type="Button" parent="Node/AcceptDialog/MenuButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 70.0
+offset_right = 64.0
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Next"
 
 [node name="Level" type="Label" parent="Node"]
-offset_left = 664.0
+offset_left = 645.0
 offset_top = 192.0
-offset_right = 780.0
+offset_right = 761.0
 offset_bottom = 219.0
 text = "Level 1"
 label_settings = SubResource("LabelSettings_uexoh")
 
 [node name="Moves" type="Label" parent="Node"]
-offset_left = 847.0
-offset_top = 194.0
-offset_right = 1071.0
-offset_bottom = 222.0
-text = "Total Moves:"
+offset_left = 838.0
+offset_top = 192.0
+offset_right = 1062.0
+offset_bottom = 220.0
+text = "Moves Left:"
 label_settings = SubResource("LabelSettings_gx2fj")
 
 [node name="label" type="Label" parent="Node"]
-offset_left = 915.0
-offset_top = 471.0
-offset_right = 1084.0
-offset_bottom = 494.0
-text = "R = Reset"
-label_settings = SubResource("LabelSettings_gx2fj")
+offset_left = 917.0
+offset_top = 461.0
+offset_right = 1086.0
+offset_bottom = 503.0
+text = "R = Reset
+q = quit"
+label_settings = SubResource("LabelSettings_jtnkp")
 
 [connection signal="confirmed" from="Node/AcceptDialog" to="Node" method="_on_accept_dialog_confirmed"]
+[connection signal="pressed" from="Node/AcceptDialog/MenuButton/quit" to="Node" method="_on_quit_pressed"]
+[connection signal="pressed" from="Node/AcceptDialog/MenuButton/restart" to="Node" method="_on_restart_pressed"]
+[connection signal="pressed" from="Node/AcceptDialog/MenuButton/next" to="Node" method="_on_next_pressed"]

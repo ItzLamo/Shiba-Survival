@@ -15,7 +15,9 @@ func _unhandled_input(event):
 			move(dir)
 	if event.is_action_pressed("reset"):
 		get_tree().reload_current_scene()
-			
+	if event.is_action_pressed("quit"):
+		get_tree().change_scene_to_file("res://Scenes/main-node.tscn")
+
 func move(dir):
 	var game = get_parent()
 	var vector_pos = inputs[dir] * grid_size
@@ -23,10 +25,10 @@ func move(dir):
 	ray.force_raycast_update()
 	if !ray.is_colliding():
 		position += inputs[dir] * grid_size
-		game.moves +=1
+		game.moves -=1
 	else:
 		var collider = ray.get_collider()
 		if collider.is_in_group('box'):
 			if collider.move(dir):
 				position += vector_pos
-				game.moves +=1
+				game.moves -=1
