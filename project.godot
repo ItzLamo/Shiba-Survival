@@ -11,11 +11,7 @@ config_version=5
 [application]
 
 config/name="Test Project"
-<<<<<<< HEAD
 run/main_scene="uid://ebfmfqhxln4d"
-=======
-run/main_scene="uid://bep1u015h6xgu"
->>>>>>> 6ded4879ad4e391beb5b87e16e0943d3f98cda26
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -23,7 +19,6 @@ config/icon="res://icon.svg"
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
-<<<<<<< HEAD
 [input]
 
 reset={
@@ -32,8 +27,6 @@ reset={
 ]
 }
 
-=======
->>>>>>> 6ded4879ad4e391beb5b87e16e0943d3f98cda26
 [rendering]
 
 renderer/rendering_method="mobile"
