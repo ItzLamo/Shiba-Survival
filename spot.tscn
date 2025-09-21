@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7okxrgi0gith"]
+
+[ext_resource type="Texture2D" uid="uid://d0fwl6w0uc615" path="res://assets/spot.png" id="1_82nir"]
+[ext_resource type="Script" uid="uid://brhpd4q8ayj5q" path="res://spot.gd" id="1_mgbwf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mgbwf"]
+
+[node name="Spot" type="Area2D"]
+script = ExtResource("1_mgbwf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(687, 367)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_82nir")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(687, 368)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("RectangleShape2D_mgbwf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
