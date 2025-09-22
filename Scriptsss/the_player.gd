@@ -41,3 +41,7 @@ func _physics_process(delta: float) -> void:
 func _on_right_door_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
 		get_tree().change_scene_to_file("res://Scenes/Right.tscn")
+
+func _on_shop_body_entered(body: Node2D) -> void:
+	if body is CharacterBody2D:
+		get_tree().change_scene_to_file("res://Scenes/Shop.tscn")

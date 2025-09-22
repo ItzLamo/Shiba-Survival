@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://ebfmfqhxln4d"]
+[gd_scene load_steps=26 format=4 uid="uid://ebfmfqhxln4d"]
 
 [ext_resource type="Script" uid="uid://cvytl7dxcrf32" path="res://Scenes/UI Menu/ui_menu.gd" id="1_mm5nx"]
 [ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://Terrain (16x16).png" id="2_b6pae"]
@@ -21,7 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://sanmg53t1iyw" path="res://assets/walk/player_walk (12).png" id="19_wmbog"]
 [ext_resource type="Script" uid="uid://7nm3yv7ccctj" path="res://Scenes/UI Menu/sprite_2d.gd" id="20_g6nts"]
 [ext_resource type="AudioStream" uid="uid://t1qfudicbdgg" path="res://assets/VFX/UI.wav" id="21_74w31"]
-[ext_resource type="AudioStream" uid="uid://6jphn73lv6q6" path="res://assets/music.wav" id="22_bs37b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74w31"]
 texture = ExtResource("2_b6pae")
@@ -308,10 +307,6 @@ script = ExtResource("20_g6nts")
 
 [node name="UI" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("21_74w31")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("22_bs37b")
-autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
