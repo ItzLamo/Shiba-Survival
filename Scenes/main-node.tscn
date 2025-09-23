@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=4 uid="uid://bep1u015h6xgu"]
 
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="1_q2cdg"]
-[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://Terrain (16x16).png" id="2_1imqh"]
+[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://assets/Terrain (16x16).png" id="2_1imqh"]
 [ext_resource type="PackedScene" uid="uid://dqf7tv1u7dou0" path="res://Our Player/the_player.tscn" id="3_ama5q"]
 [ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="4_q2cdg"]
 [ext_resource type="Texture2D" uid="uid://dmqtlyxf2gqtv" path="res://assets/Door.png" id="5_1imqh"]
@@ -324,6 +324,17 @@ offset_right = 707.0
 offset_bottom = 359.0
 text = "-->
 Here"
+label_settings = SubResource("LabelSettings_raisy")
+horizontal_alignment = 1
+
+[node name="Sokoban" type="Label" parent="."]
+modulate = Color(1, 1, 0.968627, 1)
+offset_left = 1037.0
+offset_top = 302.0
+offset_right = 1122.0
+offset_bottom = 333.0
+rotation = 1.5708
+text = "Shiba Sokoban"
 label_settings = SubResource("LabelSettings_raisy")
 horizontal_alignment = 1
 

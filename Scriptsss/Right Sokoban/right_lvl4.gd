@@ -1,7 +1,7 @@
 extends Node
 
 var game_end := false
-var moves := 100
+var moves := 120
 
 func _process(_delta):
 	$Moves.text = "Moves left: " + str(moves)
@@ -32,7 +32,7 @@ func _on_restart_pressed() -> void:
 	get_tree().reload_current_scene()
 
 func _on_next_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/right_lvl3.tscn")
+	get_tree().change_scene_to_file("res://Scenes/right_lvl4.tscn")
 
 func _on_quit_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/main-node.tscn")

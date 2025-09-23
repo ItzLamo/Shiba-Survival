@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=4 uid="uid://ccy2ot71ieh45"]
 
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="1_2k8x8"]
-[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://Terrain (16x16).png" id="2_d3hyx"]
+[ext_resource type="Texture2D" uid="uid://cve7ba46aql28" path="res://assets/Terrain (16x16).png" id="2_d3hyx"]
 [ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="3_1gy4u"]
 [ext_resource type="PackedScene" uid="uid://dqf7tv1u7dou0" path="res://Our Player/the_player.tscn" id="3_58pqi"]
 [ext_resource type="Texture2D" uid="uid://bxwyosntgepf0" path="res://assets/Start Button.png" id="4_vo135"]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dfdudhet70lcm" path="res://Scenes/Right_Game.gd" id="1_5e70r"]
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="1_n5nd6"]
-[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://Terrain (16x16).png" id="2_bjxqw"]
+[ext_resource type="Texture2D" uid="uid://cve7ba46aql28" path="res://assets/Terrain (16x16).png" id="2_bjxqw"]
 [ext_resource type="PackedScene" uid="uid://d2kdrny3q4lea" path="res://Our Player/right_player.tscn" id="4_bjxqw"]
 [ext_resource type="PackedScene" uid="uid://c34lmo5uxbsbb" path="res://Our Player/right_wall.tscn" id="5_5hr5a"]
 [ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://box.tscn" id="5_n3o1e"]

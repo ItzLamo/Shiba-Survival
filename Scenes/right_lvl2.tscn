@@ -1,8 +1,8 @@
 [gd_scene load_steps=19 format=4 uid="uid://bv38382fjurql"]
 
-[ext_resource type="Script" uid="uid://cqjwvbkh1xeus" path="res://Scenes/right_lvl2.gd" id="1_b0nqq"]
+[ext_resource type="Script" uid="uid://cqjwvbkh1xeus" path="res://Scriptsss/Right Sokoban/right_lvl2.gd" id="1_b0nqq"]
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="1_x074i"]
-[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://Terrain (16x16).png" id="2_b0nqq"]
+[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://assets/Terrain (16x16).png" id="2_b0nqq"]
 [ext_resource type="PackedScene" uid="uid://d2kdrny3q4lea" path="res://Our Player/right_player.tscn" id="3_gxgnp"]
 [ext_resource type="PackedScene" uid="uid://c34lmo5uxbsbb" path="res://Our Player/right_wall.tscn" id="4_1ciyy"]
 [ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://box.tscn" id="5_bbbj5"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=4 uid="uid://b8y3gofew4qcs"]
 
 [ext_resource type="Script" uid="uid://bkx43pjo44k00" path="res://Scenes/shop.gd" id="1_ckylj"]
-[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://Terrain (16x16).png" id="1_kjfcx"]
+[ext_resource type="Texture2D" uid="uid://cve7ba46aql28" path="res://assets/Terrain (16x16).png" id="1_kjfcx"]
 [ext_resource type="FontFile" uid="uid://bag36hhmyneyq" path="res://Fonts/TrueType (.ttf)/Kaph-Regular.ttf" id="2_iidq5"]
 [ext_resource type="Script" uid="uid://dvm56vr7sf7nl" path="res://Scenes/label_2.gd" id="3_e5ji4"]
 [ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="4_e5ji4"]
