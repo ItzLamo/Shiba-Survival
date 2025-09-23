@@ -1,0 +1,76 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxotxwduqbd3r"]
+
+[ext_resource type="Script" uid="uid://c1vsna3nwqoda" path="res://Scenes/Up Flappy/shiba.gd" id="1_36d7g"]
+[ext_resource type="Texture2D" uid="uid://dntxvubjmisc6" path="res://assets/shiba_bird.png" id="1_pkq6t"]
+[ext_resource type="PackedScene" uid="uid://d1ccjucnkt4wp" path="res://Scenes/Up Flappy/pipes.tscn" id="3_2n60d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_36d7g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pkq6t")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2n60d"]
+size = Vector2(16.25, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36d7g"]
+size = Vector2(20, 293.214)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="shiba" type="RigidBody2D" parent="."]
+position = Vector2(512, 256)
+script = ExtResource("1_36d7g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="shiba"]
+texture_filter = 1
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_36d7g")
+animation = &"new_animation"
+frame_progress = 0.00171716
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="shiba"]
+position = Vector2(0.500001, 0)
+scale = Vector2(3.8, 3.8)
+shape = SubResource("RectangleShape2D_2n60d")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="shiba"]
+root_node = NodePath("../..")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-416, -192)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(648, 344.5)
+scale = Vector2(1.4, 1.4)
+shape = SubResource("RectangleShape2D_36d7g")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1076, 347)
+scale = Vector2(1.4, 1.4)
+shape = SubResource("RectangleShape2D_36d7g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(847, 473)
+rotation = 1.5708
+scale = Vector2(1.4, 1.4)
+shape = SubResource("RectangleShape2D_36d7g")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(864, 234)
+rotation = 1.5708
+scale = Vector2(1.4, 1.4)
+shape = SubResource("RectangleShape2D_36d7g")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.885
+autostart = true
+
+[node name="Node2D" parent="Timer" instance=ExtResource("3_2n60d")]

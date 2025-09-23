@@ -32,7 +32,7 @@ func _on_restart_pressed() -> void:
 	get_tree().reload_current_scene()
 
 func _on_next_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/right_lvl4.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Right Sokoban/right_lvl4.tscn")
 
 func _on_quit_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/main-node.tscn")
