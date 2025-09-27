@@ -250,6 +250,15 @@ text = "Coming Soon..."
 label_settings = SubResource("LabelSettings_1imqh")
 autowrap_mode = 3
 
+[node name="Label2" type="Label" parent="."]
+offset_left = 400.0
+offset_top = 96.0
+offset_right = 504.0
+offset_bottom = 120.0
+text = "Coming Soon..."
+label_settings = SubResource("LabelSettings_1imqh")
+autowrap_mode = 3
+
 [node name="Label3" type="Label" parent="."]
 offset_left = 758.0
 offset_top = 607.0
@@ -311,9 +320,10 @@ transform = Transform2D(2, 0, 0, 2, 0, 0)
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
 modulate = Color(1, 1, 0.968627, 1)
+texture_filter = 1
 offset_left = 10.5
 offset_top = 10.5
-offset_right = 77.5
+offset_right = 123.5
 offset_bottom = 33.5
 text = "Total SSS"
 label_settings = SubResource("LabelSettings_v5d4y")
