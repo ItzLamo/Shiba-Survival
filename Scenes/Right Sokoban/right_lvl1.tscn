@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://assets/Terrain (16x16).png" id="2_n76kr"]
 [ext_resource type="PackedScene" uid="uid://d2kdrny3q4lea" path="res://Our Player/right_player.tscn" id="3_yf27x"]
 [ext_resource type="PackedScene" uid="uid://c34lmo5uxbsbb" path="res://Our Player/right_wall.tscn" id="4_iwyl8"]
-[ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://box.tscn" id="5_7o1y7"]
-[ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://spot.tscn" id="6_vc1ht"]
+[ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://Scenes/Right Sokoban/box.tscn" id="5_7o1y7"]
+[ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://Scenes/Right Sokoban/spot.tscn" id="6_vc1ht"]
 [ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="7_o5t20"]
 [ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="8_546g2"]
 

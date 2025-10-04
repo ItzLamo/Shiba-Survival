@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cl6228348wa4q"]
+[gd_scene load_steps=4 format=3 uid="uid://cl6228348wa4q"]
 
 [ext_resource type="Texture2D" uid="uid://cfbsdrlw3h1j4" path="res://assets/Loading.png" id="1_twbmk"]
-[ext_resource type="Script" uid="uid://c1vsna3nwqoda" path="res://Scenes/Up Flappy/shiba.gd" id="1_vl13c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m1du0"]
 animations = []
@@ -12,8 +11,8 @@ size = Vector2(16.6776, 18.4211)
 [node name="Node2D" type="Node2D"]
 
 [node name="shiba" type="RigidBody2D" parent="."]
+visible = false
 position = Vector2(512, 256)
-script = ExtResource("1_vl13c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="shiba"]
 texture_filter = 1
@@ -31,6 +30,6 @@ shape = SubResource("RectangleShape2D_tlbop")
 root_node = NodePath("../..")
 
 [node name="Loading" type="Sprite2D" parent="."]
-position = Vector2(576, 320)
+position = Vector2(576, 323)
 scale = Vector2(0.750326, 0.754959)
 texture = ExtResource("1_twbmk")

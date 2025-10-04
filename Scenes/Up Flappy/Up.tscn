@@ -539,10 +539,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -384.0
-offset_top = -196.0
-offset_right = 130.0
-offset_bottom = 3.0
+offset_left = -389.0
+offset_top = -197.0
+offset_right = 125.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Press Space To Start"
@@ -553,7 +553,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node"]
 texture_filter = 1
-position = Vector2(448, 164)
+position = Vector2(444, 164)
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_mgkxd")
 animation = &"new_animation"

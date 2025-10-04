@@ -47,4 +47,4 @@ func _on_shop_body_entered(body: Node2D) -> void:
 		get_tree().change_scene_to_file("res://Scenes/Shop/Shop.tscn")
 
 func _on_right_door_2_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://Scenes/Up Flappy/Up.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Up Flappy/Upmain.tscn")
