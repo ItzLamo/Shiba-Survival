@@ -36,7 +36,16 @@ func _physics_process(delta: float) -> void:
 			footstep.play()
 
 	move_and_slide()
+	
+func _ready():
+	Global.player = self
 
+func change_skin(texture_path: String) -> void:
+	var new_texture = load(texture_path)
+	if new_texture:
+		sprite.texture = new_texture
+	else:
+		print("Texture not found:", texture_path)
 
 func _on_right_door_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:

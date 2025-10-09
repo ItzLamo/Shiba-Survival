@@ -214,20 +214,63 @@ position = Vector2(-72, -176)
 position = Vector2(72, 176)
 polygon = PackedVector2Array(-96, 72, 280, 80, 288, -184, 312, -184, 312, 72, 280, 72, 288, 72, 280, 104, -96, 104)
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="Obstcales Wall"]
+[node name="StaticBody2D6" type="StaticBody2D" parent="Obstcales Wall"]
 position = Vector2(-72, -176)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D2"]
-polygon = PackedVector2Array(520, -8, 544, -8, 544, 248, 560, 248, 1152, 248, 1152, 280, 552, 280, 552, 256, 520, 248)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D6"]
+position = Vector2(72, 176)
+polygon = PackedVector2Array(-96, 72, 280, 80, 288, -184, 312, -184, 312, 72, 280, 72, 288, 72, 280, 104, -96, 104)
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Obstcales Wall"]
+position = Vector2(-48, -176)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D7"]
+position = Vector2(104, 169)
+polygon = PackedVector2Array(-160, 96, -128, 96, -128, 256, -160, 256)
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Obstcales Wall"]
+position = Vector2(1116, -175)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D8"]
+position = Vector2(118, 169)
+polygon = PackedVector2Array(-160, 96, -128, 96, -128, 256, -160, 256)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D8"]
+position = Vector2(118, 169)
+polygon = PackedVector2Array(-160, 96, -128, 96, -128, 256, -160, 256)
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="Obstcales Wall"]
+position = Vector2(1080, 518)
+rotation = 1.5708
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D9"]
+position = Vector2(107, 169)
+polygon = PackedVector2Array(-160, 96, -128, 96, -128, 256, -160, 256)
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="Obstcales Wall"]
+position = Vector2(496, 507)
+rotation = 1.5708
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D10"]
+position = Vector2(122, 169)
+polygon = PackedVector2Array(-160, 96, -128, 96, -128, 256, -160, 256)
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="Obstcales Wall"]
+position = Vector2(720, -144)
+rotation = 1.5708
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D11"]
+position = Vector2(104, 169)
+polygon = PackedVector2Array(-160, 96, -128, 96, -128, 256, -160, 256)
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="Obstcales Wall"]
-position = Vector2(-72, -176)
+position = Vector2(-72, -175)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D3"]
 polygon = PackedVector2Array(-24, 408, 128, 408, 136, 440, 160, 440, 160, 664, 136, 664, 136, 440, -24, 440)
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Obstcales Wall"]
-position = Vector2(-72, -176)
+position = Vector2(-72, -175)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D4"]
 polygon = PackedVector2Array(296, 664, 296, 440, 328, 440, 328, 416, 328, 408, 704, 408, 704, 424, 696, 424, 704, 424, 703.821, 429.214, 720, 440, 736, 440, 736, 664, 712, 664, 712, 440, 704, 440, 328, 440, 320, 440, 320, 664)
