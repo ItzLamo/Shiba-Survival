@@ -218,8 +218,8 @@ polygon = PackedVector2Array(-96, 72, 280, 80, 288, -184, 312, -184, 312, 72, 28
 position = Vector2(-72, -176)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstcales Wall/StaticBody2D6"]
-position = Vector2(72, 176)
-polygon = PackedVector2Array(-96, 72, 280, 80, 288, -184, 312, -184, 312, 72, 280, 72, 288, 72, 280, 104, -96, 104)
+position = Vector2(712, 168)
+polygon = PackedVector2Array(-200, -160, -160, -160, -160, 72, -160, 80, 440, 80, 440, 104, 440, 104, -160, 104, -160, 88, -168, 80, -192, 80)
 
 [node name="StaticBody2D7" type="StaticBody2D" parent="Obstcales Wall"]
 position = Vector2(-48, -176)

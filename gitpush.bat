@@ -1,4 +1,3 @@
-@echo off
 git add -A
-git commit -m "Auto commit %date% %time%"
-git push
+git commit -m "Developed More New Levels scene with their scripts"
+git push origin --force --all

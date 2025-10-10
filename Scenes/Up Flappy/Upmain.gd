@@ -77,7 +77,7 @@ func _on_pipe_timer_timeout():
 	generate_pipes()
 	
 func generate_pipes():
-	var pipe = pipe_scene.instantiate()
+qq	var pipe = pipe_scene.instantiate()
 	pipe.position.x = screen_size.x + PIPE_DELAY
 	pipe.position.y = (screen_size.y - ground_height) / 2  + randi_range(-PIPE_RANGE, PIPE_RANGE)
 	pipe.hit.connect(bird_hit)
