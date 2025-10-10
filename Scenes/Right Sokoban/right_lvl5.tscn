@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://beo1bivcqcssk"]
+[gd_scene load_steps=21 format=4 uid="uid://beo1bivcqcssk"]
 
 [ext_resource type="Script" uid="uid://dif1kjpf3rsd7" path="res://Scriptsss/Right Sokoban/right_lvl5.gd" id="1_kwqpb"]
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="2_8sv3b"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://Scenes/Right Sokoban/box.tscn" id="6_hitt2"]
 [ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://Scenes/Right Sokoban/spot.tscn" id="7_gixn5"]
 [ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="8_6xcd6"]
+[ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="8_8sv3b"]
 [ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="9_aj1tq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kwqpb"]
@@ -313,7 +314,10 @@ sources/0 = SubResource("TileSetAtlasSource_8sv3b")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7q4nb"]
 size = Vector2(20, 293.214)
 
-[sub_resource type="Theme" id="Theme_vvixm"]
+[sub_resource type="Theme" id="Theme_vso0a"]
+default_font = ExtResource("8_8sv3b")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_13tjf"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yy5mt"]
 font = ExtResource("8_6xcd6")
@@ -601,14 +605,16 @@ position = Vector2(224, 64)
 
 [node name="AcceptDialog" type="AcceptDialog" parent="Node"]
 auto_translate_mode = 1
+canvas_item_default_texture_filter = 0
 title = "Good Job"
 initial_position = 1
 size = Vector2i(200, 288)
-theme = SubResource("Theme_vvixm")
+theme = SubResource("Theme_vso0a")
 ok_button_text = ""
 dialog_close_on_escape = false
 
 [node name="MenuButton" type="MenuButton" parent="Node/AcceptDialog"]
+material = SubResource("CanvasItemMaterial_13tjf")
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 192.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://dq3tvpx806nfi"]
+[gd_scene load_steps=21 format=4 uid="uid://dq3tvpx806nfi"]
 
 [ext_resource type="Script" uid="uid://dmxo37mgf7xj7" path="res://Scriptsss/Right Sokoban/right_lvl9.gd" id="1_qprup"]
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="2_olovn"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c34lmo5uxbsbb" path="res://Our Player/right_wall.tscn" id="5_a8cd2"]
 [ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://Scenes/Right Sokoban/box.tscn" id="6_minuv"]
 [ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://Scenes/Right Sokoban/spot.tscn" id="7_vqqk6"]
+[ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="8_olovn"]
 [ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="8_q1kpb"]
 [ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="9_ead7s"]
 
@@ -314,6 +315,9 @@ sources/0 = SubResource("TileSetAtlasSource_6fs5y")
 size = Vector2(20, 293.214)
 
 [sub_resource type="Theme" id="Theme_nk5hk"]
+default_font = ExtResource("8_olovn")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_46pff"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pqtha"]
 font = ExtResource("8_q1kpb")
@@ -587,6 +591,7 @@ position = Vector2(160, -32)
 
 [node name="AcceptDialog" type="AcceptDialog" parent="Node"]
 auto_translate_mode = 1
+canvas_item_default_texture_filter = 0
 title = "Good Job"
 initial_position = 1
 size = Vector2i(200, 288)
@@ -595,6 +600,7 @@ ok_button_text = ""
 dialog_close_on_escape = false
 
 [node name="MenuButton" type="MenuButton" parent="Node/AcceptDialog"]
+material = SubResource("CanvasItemMaterial_46pff")
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 192.0
@@ -630,7 +636,6 @@ grow_horizontal = 2
 text = "Restart"
 
 [node name="next" type="Button" parent="Node/AcceptDialog/MenuButton"]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

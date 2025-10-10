@@ -14,9 +14,8 @@ func _process(_delta):
 
 		if spots == 0:
 			game_end = true
-			Global.score += moves 
-			$AcceptDialog.title = "You Win!"
-			$AcceptDialog.dialog_text = "You have got\n         +%d SSS" % [moves]
+			$AcceptDialog.title = "You Ready!"
+			$AcceptDialog.dialog_text = "Let's Go"
 			$AcceptDialog.popup()
 
 		elif moves <= 0:

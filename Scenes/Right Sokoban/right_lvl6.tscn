@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://mos82j03u564"]
+[gd_scene load_steps=21 format=4 uid="uid://mos82j03u564"]
 
 [ext_resource type="Script" uid="uid://c11skoagw57kx" path="res://Scriptsss/Right Sokoban/right_lvl6.gd" id="1_dmmew"]
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="2_m3q5p"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://Scenes/Right Sokoban/spot.tscn" id="7_n43cu"]
 [ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="8_sjpp5"]
 [ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="9_dneas"]
+[ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="10_m3q5p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dmmew"]
 texture = ExtResource("3_t3ipq")
@@ -313,8 +314,6 @@ sources/0 = SubResource("TileSetAtlasSource_m3q5p")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tvrsx"]
 size = Vector2(20, 293.214)
 
-[sub_resource type="Theme" id="Theme_4f1d4"]
-
 [sub_resource type="LabelSettings" id="LabelSettings_w5uhe"]
 font = ExtResource("8_sjpp5")
 font_size = 23
@@ -334,6 +333,11 @@ font = ExtResource("9_dneas")
 font_size = 17
 outline_size = 5
 outline_color = Color(0.631373, 0.278431, 0.266667, 1)
+
+[sub_resource type="Theme" id="Theme_t3ipq"]
+default_font = ExtResource("10_m3q5p")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vn124"]
 
 [node name="RightLvl6" type="Node2D"]
 
@@ -564,16 +568,46 @@ position = Vector2(96, 64)
 [node name="Spot2" parent="Node/Spots" instance=ExtResource("7_n43cu")]
 position = Vector2(224, 64)
 
+[node name="Level" type="Label" parent="Node"]
+offset_left = 645.0
+offset_top = 192.0
+offset_right = 761.0
+offset_bottom = 219.0
+text = "Level 6"
+label_settings = SubResource("LabelSettings_w5uhe")
+metadata/_edit_use_anchors_ = true
+
+[node name="Moves" type="Label" parent="Node"]
+offset_left = 838.0
+offset_top = 192.0
+offset_right = 1062.0
+offset_bottom = 220.0
+text = "Moves Left:"
+label_settings = SubResource("LabelSettings_cqirg")
+metadata/_edit_use_anchors_ = true
+
+[node name="label" type="Label" parent="Node"]
+offset_left = 917.0
+offset_top = 461.0
+offset_right = 1086.0
+offset_bottom = 503.0
+text = "R = Reset
+q = quit"
+label_settings = SubResource("LabelSettings_2lerx")
+metadata/_edit_use_anchors_ = true
+
 [node name="AcceptDialog" type="AcceptDialog" parent="Node"]
 auto_translate_mode = 1
+canvas_item_default_texture_filter = 0
 title = "Good Job"
 initial_position = 1
 size = Vector2i(200, 288)
-theme = SubResource("Theme_4f1d4")
+theme = SubResource("Theme_t3ipq")
 ok_button_text = ""
 dialog_close_on_escape = false
 
 [node name="MenuButton" type="MenuButton" parent="Node/AcceptDialog"]
+material = SubResource("CanvasItemMaterial_vn124")
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 192.0
@@ -622,34 +656,6 @@ offset_bottom = 133.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Next"
-
-[node name="Level" type="Label" parent="Node"]
-offset_left = 645.0
-offset_top = 192.0
-offset_right = 761.0
-offset_bottom = 219.0
-text = "Level 6"
-label_settings = SubResource("LabelSettings_w5uhe")
-metadata/_edit_use_anchors_ = true
-
-[node name="Moves" type="Label" parent="Node"]
-offset_left = 838.0
-offset_top = 192.0
-offset_right = 1062.0
-offset_bottom = 220.0
-text = "Moves Left:"
-label_settings = SubResource("LabelSettings_cqirg")
-metadata/_edit_use_anchors_ = true
-
-[node name="label" type="Label" parent="Node"]
-offset_left = 917.0
-offset_top = 461.0
-offset_right = 1086.0
-offset_bottom = 503.0
-text = "R = Reset
-q = quit"
-label_settings = SubResource("LabelSettings_2lerx")
-metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="Node/AcceptDialog/MenuButton/quit" to="Node" method="_on_quit_pressed"]
 [connection signal="pressed" from="Node/AcceptDialog/MenuButton/restart" to="Node" method="_on_restart_pressed"]

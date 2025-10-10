@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://c5k4arwgahydf"]
+[gd_scene load_steps=21 format=4 uid="uid://c5k4arwgahydf"]
 
 [ext_resource type="Script" uid="uid://dvpm3khbjn5lh" path="res://Scriptsss/Right Sokoban/right_lvl3.gd" id="1_eo0x0"]
 [ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="3_jvsqw"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d2kdrny3q4lea" path="res://Our Player/right_player.tscn" id="5_8molr"]
 [ext_resource type="PackedScene" uid="uid://c34lmo5uxbsbb" path="res://Our Player/right_wall.tscn" id="6_iyhhb"]
 [ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://Scenes/Right Sokoban/box.tscn" id="7_mul1s"]
+[ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="8_cjelp"]
 [ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://Scenes/Right Sokoban/spot.tscn" id="8_t0slq"]
 [ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="9_ouosu"]
 [ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="10_fn1ml"]
@@ -313,7 +314,10 @@ sources/0 = SubResource("TileSetAtlasSource_eo0x0")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6uhdx"]
 size = Vector2(20, 293.214)
 
-[sub_resource type="Theme" id="Theme_qssqe"]
+[sub_resource type="Theme" id="Theme_8cu4q"]
+default_font = ExtResource("8_cjelp")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_afbjt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_e6fgj"]
 font = ExtResource("9_ouosu")
@@ -592,14 +596,16 @@ position = Vector2(224, -64)
 
 [node name="AcceptDialog" type="AcceptDialog" parent="Node"]
 auto_translate_mode = 1
+canvas_item_default_texture_filter = 0
 title = "Good Job"
 initial_position = 1
 size = Vector2i(200, 288)
-theme = SubResource("Theme_qssqe")
+theme = SubResource("Theme_8cu4q")
 ok_button_text = ""
 dialog_close_on_escape = false
 
 [node name="MenuButton" type="MenuButton" parent="Node/AcceptDialog"]
+material = SubResource("CanvasItemMaterial_afbjt")
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 192.0
