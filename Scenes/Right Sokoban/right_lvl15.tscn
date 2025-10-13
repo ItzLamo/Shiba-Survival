@@ -1,18 +1,18 @@
-[gd_scene load_steps=21 format=4 uid="uid://jxlkclggqa5d"]
+[gd_scene load_steps=21 format=4 uid="uid://l3f15dp63neg"]
 
-[ext_resource type="Script" uid="uid://xln1ymy1l5tg" path="res://Scriptsss/Right Sokoban/right_lvl12.gd" id="1_yo88d"]
-[ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="2_ewgp1"]
-[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://assets/Terrain (16x16).png" id="3_2vjdb"]
-[ext_resource type="PackedScene" uid="uid://d2kdrny3q4lea" path="res://Our Player/right_player.tscn" id="4_riosh"]
-[ext_resource type="PackedScene" uid="uid://c34lmo5uxbsbb" path="res://Our Player/right_wall.tscn" id="5_5hli6"]
-[ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://Scenes/Right Sokoban/box.tscn" id="6_hg515"]
-[ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://Scenes/Right Sokoban/spot.tscn" id="7_ldj6b"]
-[ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="8_30hwu"]
-[ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="9_6xre3"]
-[ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="10_nsv0k"]
+[ext_resource type="Script" uid="uid://dxeblw3h6oq0m" path="res://Scriptsss/Right Sokoban/right_lvl15.gd" id="1_blafa"]
+[ext_resource type="Texture2D" uid="uid://c3yom7gx02bbi" path="res://assets/Brown.png" id="2_pyddv"]
+[ext_resource type="Texture2D" uid="uid://de5gatuvyxsyf" path="res://assets/Terrain (16x16).png" id="3_u8440"]
+[ext_resource type="PackedScene" uid="uid://d2kdrny3q4lea" path="res://Our Player/right_player.tscn" id="4_a27h1"]
+[ext_resource type="PackedScene" uid="uid://c34lmo5uxbsbb" path="res://Our Player/right_wall.tscn" id="5_0sixa"]
+[ext_resource type="PackedScene" uid="uid://g5fijbg7kwle" path="res://Scenes/Right Sokoban/box.tscn" id="6_qaylp"]
+[ext_resource type="PackedScene" uid="uid://c7okxrgi0gith" path="res://Scenes/Right Sokoban/spot.tscn" id="7_n8drj"]
+[ext_resource type="FontFile" uid="uid://c7gtiwnvax14j" path="res://Fonts/m6x11.ttf" id="8_cfxsd"]
+[ext_resource type="FontFile" uid="uid://h5c753pr3xtj" path="res://Fonts/OpenType (.otf)/Kaph-Regular.otf" id="9_6uu0x"]
+[ext_resource type="FontFile" uid="uid://bjfcq78o45fut" path="res://Fonts/OpenType (.otf)/Kaph-Italic.otf" id="10_wg0nx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q73ga"]
-texture = ExtResource("3_2vjdb")
+texture = ExtResource("3_u8440")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -162,7 +162,7 @@ texture = ExtResource("3_2vjdb")
 sources/0 = SubResource("TileSetAtlasSource_q73ga")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6fs5y"]
-texture = ExtResource("3_2vjdb")
+texture = ExtResource("3_u8440")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -315,26 +315,26 @@ sources/0 = SubResource("TileSetAtlasSource_6fs5y")
 size = Vector2(20, 293.214)
 
 [sub_resource type="Theme" id="Theme_0hcx1"]
-default_font = ExtResource("8_30hwu")
+default_font = ExtResource("8_cfxsd")
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_oy3n5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_pqtha"]
-font = ExtResource("9_6xre3")
+font = ExtResource("9_6uu0x")
 font_size = 23
 outline_size = 5
 outline_color = Color(0.631373, 0.278431, 0.266667, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_wfj58"]
 line_spacing = 2.0
-font = ExtResource("9_6xre3")
+font = ExtResource("9_6uu0x")
 font_size = 23
 outline_size = 5
 outline_color = Color(0.631373, 0.278431, 0.266667, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_64bc7"]
 line_spacing = 2.0
-font = ExtResource("10_nsv0k")
+font = ExtResource("10_wg0nx")
 font_size = 17
 outline_size = 5
 outline_color = Color(0.631373, 0.278431, 0.266667, 1)
@@ -342,7 +342,7 @@ outline_color = Color(0.631373, 0.278431, 0.266667, 1)
 [node name="RightLvl8" type="Node2D"]
 
 [node name="Node" type="Node" parent="."]
-script = ExtResource("1_yo88d")
+script = ExtResource("1_blafa")
 
 [node name="TextureRect" type="TextureRect" parent="Node"]
 texture_filter = 1
@@ -351,7 +351,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_ewgp1")
+texture = ExtResource("2_pyddv")
 stretch_mode = 1
 metadata/_edit_lock_ = true
 
@@ -372,149 +372,143 @@ tile_map_data = PackedByteArray("AAD0//T/AAAAAAQAAAD0//X/AAAAAAUAAAD0//b/AAAAAAU
 tile_set = SubResource("TileSet_iraub")
 metadata/_edit_lock_ = true
 
-[node name="CharacterBody2D" parent="Node" instance=ExtResource("4_riosh")]
-position = Vector2(64, -64)
+[node name="CharacterBody2D" parent="Node" instance=ExtResource("4_a27h1")]
+position = Vector2(96, -64)
 
 [node name="Node2D" type="Node2D" parent="Node"]
 
-[node name="Wall16" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall16" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(0, -96)
 
-[node name="Wall30" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall30" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(0, -64)
 
-[node name="Wall31" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall31" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(32, -64)
 
-[node name="Wall41" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(64, -64)
+[node name="Wall41" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(288, -32)
 
-[node name="Wall48" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(64, -96)
-
-[node name="Wall49" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(96, -96)
-
-[node name="Wall50" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(128, -96)
-
-[node name="Wall51" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(160, 64)
-
-[node name="Wall52" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(96, 64)
-
-[node name="Wall53" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(128, 64)
-
-[node name="Wall54" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(160, -96)
-
-[node name="Wall55" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(256, -96)
-
-[node name="Wall56" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(224, -96)
-
-[node name="Wall57" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(192, -96)
-
-[node name="Wall58" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(256, 64)
-
-[node name="Wall42" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(128, -64)
-
-[node name="Wall59" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(160, -64)
-
-[node name="Wall60" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(192, -64)
-
-[node name="Wall61" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(288, 64)
-
-[node name="Wall62" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(288, 32)
-
-[node name="Wall63" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall42" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(288, 0)
 
-[node name="Wall43" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(96, -64)
+[node name="Wall43" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(288, 32)
 
-[node name="Wall44" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
-position = Vector2(192, 64)
+[node name="Wall44" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(160, 32)
 
-[node name="Wall45" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall45" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(256, -32)
+
+[node name="Wall61" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(160, -96)
+
+[node name="Wall48" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(288, -64)
+
+[node name="Wall49" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(96, 64)
+
+[node name="Wall50" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(160, 64)
+
+[node name="Wall51" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(64, 64)
 
-[node name="Wall32" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall56" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(64, 32)
+
+[node name="Wall57" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(64, 0)
+
+[node name="Wall58" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(64, -32)
+
+[node name="Wall59" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(64, -64)
+
+[node name="Wall60" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(64, -96)
+
+[node name="Wall52" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(256, 64)
+
+[node name="Wall53" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(128, 64)
+
+[node name="Wall54" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(192, 64)
+
+[node name="Wall55" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
+position = Vector2(288, 64)
+
+[node name="Wall32" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(0, -32)
 
-[node name="Wall33" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall33" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(32, -32)
 
-[node name="Wall34" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall34" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 
-[node name="Wall35" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall35" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(32, 0)
 
-[node name="Wall38" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall38" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(32, 32)
 
-[node name="Wall18" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall18" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(352, -96)
 
-[node name="Wall23" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall23" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(352, -64)
 
-[node name="Wall24" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall24" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(352, -32)
 
-[node name="Wall25" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall25" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(352, 0)
 
-[node name="Wall26" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall26" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(352, 32)
 
-[node name="Wall27" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall27" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(352, 64)
 
-[node name="Wall28" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall28" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(320, 64)
 
-[node name="Wall29" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall29" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(320, 32)
 
-[node name="Wall36" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall36" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(320, 0)
 
-[node name="Wall37" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall37" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(320, -32)
 
-[node name="Wall39" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall39" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(320, -64)
 
-[node name="Wall40" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall40" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(320, -96)
 
-[node name="Wall46" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall46" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(288, -96)
 
-[node name="Wall47" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall47" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(224, 64)
 
-[node name="Wall22" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall22" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(32, 64)
 
-[node name="Wall19" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall19" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(0, 32)
 
-[node name="Wall20" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall20" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(0, 64)
 
-[node name="Wall21" parent="Node/Node2D" instance=ExtResource("5_5hli6")]
+[node name="Wall21" parent="Node/Node2D" instance=ExtResource("5_0sixa")]
 position = Vector2(32, -96)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Node"]
@@ -551,43 +545,43 @@ limit_bottom = 646
 
 [node name="Boxes" type="Node2D" parent="Node"]
 
-[node name="Box" parent="Node/Boxes" instance=ExtResource("6_hg515")]
+[node name="Box" parent="Node/Boxes" instance=ExtResource("6_qaylp")]
+position = Vector2(128, -32)
+
+[node name="Box2" parent="Node/Boxes" instance=ExtResource("6_qaylp")]
+position = Vector2(128, -64)
+
+[node name="Box7" parent="Node/Boxes" instance=ExtResource("6_qaylp")]
+position = Vector2(224, 0)
+
+[node name="Box10" parent="Node/Boxes" instance=ExtResource("6_qaylp")]
+position = Vector2(192, -32)
+
+[node name="Box8" parent="Node/Boxes" instance=ExtResource("6_qaylp")]
 position = Vector2(128, 0)
 
-[node name="Box2" parent="Node/Boxes" instance=ExtResource("6_hg515")]
-position = Vector2(96, 0)
-
-[node name="Box7" parent="Node/Boxes" instance=ExtResource("6_hg515")]
-position = Vector2(256, 0)
-
-[node name="Box10" parent="Node/Boxes" instance=ExtResource("6_hg515")]
-position = Vector2(256, -32)
-
-[node name="Box8" parent="Node/Boxes" instance=ExtResource("6_hg515")]
-position = Vector2(96, -32)
-
-[node name="Box9" parent="Node/Boxes" instance=ExtResource("6_hg515")]
-position = Vector2(96, 32)
+[node name="Box9" parent="Node/Boxes" instance=ExtResource("6_qaylp")]
+position = Vector2(224, -64)
 
 [node name="Spots" type="Node2D" parent="Node"]
 
-[node name="Spot4" parent="Node/Spots" instance=ExtResource("7_ldj6b")]
+[node name="Spot4" parent="Node/Spots" instance=ExtResource("7_n8drj")]
+position = Vector2(192, -64)
+
+[node name="Spot6" parent="Node/Spots" instance=ExtResource("7_n8drj")]
 position = Vector2(192, -32)
 
-[node name="Spot6" parent="Node/Spots" instance=ExtResource("7_ldj6b")]
+[node name="Spot5" parent="Node/Spots" instance=ExtResource("7_n8drj")]
 position = Vector2(192, 0)
 
-[node name="Spot5" parent="Node/Spots" instance=ExtResource("7_ldj6b")]
-position = Vector2(192, 32)
+[node name="Spot3" parent="Node/Spots" instance=ExtResource("7_n8drj")]
+position = Vector2(160, -64)
 
-[node name="Spot3" parent="Node/Spots" instance=ExtResource("7_ldj6b")]
-position = Vector2(160, -32)
-
-[node name="Spot9" parent="Node/Spots" instance=ExtResource("7_ldj6b")]
-position = Vector2(160, 32)
-
-[node name="Spot10" parent="Node/Spots" instance=ExtResource("7_ldj6b")]
+[node name="Spot9" parent="Node/Spots" instance=ExtResource("7_n8drj")]
 position = Vector2(160, 0)
+
+[node name="Spot10" parent="Node/Spots" instance=ExtResource("7_n8drj")]
+position = Vector2(160, -32)
 
 [node name="AcceptDialog" type="AcceptDialog" parent="Node"]
 auto_translate_mode = 1
@@ -655,7 +649,7 @@ offset_left = 645.0
 offset_top = 192.0
 offset_right = 781.0
 offset_bottom = 219.0
-text = "Level 12"
+text = "Level 15"
 label_settings = SubResource("LabelSettings_pqtha")
 metadata/_edit_use_anchors_ = true
 
