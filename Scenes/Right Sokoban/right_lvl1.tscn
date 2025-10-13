@@ -533,9 +533,9 @@ text = "Level 1"
 label_settings = SubResource("LabelSettings_et4ch")
 
 [node name="Moves" type="Label" parent="Node"]
-offset_left = 838.0
+offset_left = 839.0
 offset_top = 192.0
-offset_right = 1062.0
+offset_right = 1063.0
 offset_bottom = 220.0
 text = "Moves Left:"
 label_settings = SubResource("LabelSettings_jgpcy")
