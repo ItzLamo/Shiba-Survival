@@ -1,7 +1,7 @@
 extends Node
 
 var game_end := false
-var moves := 130
+var moves := 120
 
 func _process(_delta):
 	$Moves.text = "Moves left: " + str(moves)
@@ -18,6 +18,7 @@ func _process(_delta):
 			$AcceptDialog.title = "You Win!"
 			$AcceptDialog.dialog_text = "You have got\n         +%d SSS" % [moves]
 			$AcceptDialog.popup()
+
 		elif moves <= 0:
 			game_end = true
 			$AcceptDialog.title = "Game Over!"
@@ -31,7 +32,7 @@ func _on_restart_pressed() -> void:
 	get_tree().reload_current_scene()
 
 func _on_next_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/Right Sokoban/right_lvl24.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Right Sokoban/right_lvl27.tscn")
 
 func _on_quit_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/main-node.tscn")

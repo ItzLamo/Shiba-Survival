@@ -24,7 +24,6 @@ func _process(_delta):
 			$AcceptDialog.title = "Game Over!"
 			$AcceptDialog.dialog_text = "No moves left!\nPress R to restart"
 			$AcceptDialog.popup()
-
 func _on_accept_dialog_confirmed() -> void:
 	pass
 

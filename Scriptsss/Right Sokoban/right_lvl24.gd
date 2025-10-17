@@ -18,7 +18,6 @@ func _process(_delta):
 			$AcceptDialog.title = "You Win!"
 			$AcceptDialog.dialog_text = "You have got\n         +%d SSS" % [moves]
 			$AcceptDialog.popup()
-
 		elif moves <= 0:
 			game_end = true
 			$AcceptDialog.title = "Game Over!"
