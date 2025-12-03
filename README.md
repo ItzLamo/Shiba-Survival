@@ -1,152 +1,70 @@
-<a id="readme-top"></a>
+# Shiba-Survival 
 
-<!-- SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+**Shiba-Survival** is the first Shiba-themed arcade game built using Godot, a Shiba (or Shibas) — surviving, arcade-style gameplay and whatever fun you want to build on top.
 
-<!-- HEADER -->
-<br />
-<div align="center">
-    <a href="https://github.com/BudzioT/Godot_Super-Wakatime">
-        <img src="https://cloud-bo1ln2br1-hack-club-bot.vercel.app/0godotwaka22.png"  alt="Godot Wakatime"/>
-    </a>
-    <h3 align="center"> Godot Super Wakatime </h3>
-    <p align="center">
-        Tool to measure time spent in loved by many people game engine - Godot
-        <br />
-        Officially approved to use in High Seas event created by Hack Club
-        <br />
-        <br />
-        <a href="https://godotengine.org/asset-library/asset/3484">Get from Asset Lib</a>
-        ·
-        <a href="https://youtu.be/rqAc-YdVXyM">View Demo</a>
-        ·
-        <a href="https://github.com/BudzioT/Godot_Super-Wakatime/issues/new">Report Bug / Request Feature</a>
-    </p>
-</div>
+## What is this project
 
-<!-- CONTENTS -->
-<details>
-    <summary>Table of Contents</summary>
-    <ol>
-        <li>
-            <a href="#about">About The Project</a>
-            <ul>
-                <li><a href="#built-with">Built Using</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#getting-started">Getting Started</a>
-            <ul>
-                <li><a href="#installation">Installation</a></li>
-            </ul>
-        </li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#license">License</a></li>
-    </ol>
-</details>
+- A small arcade survival game built with Godot (GDScript).  
+- Includes scenes, scripts, assets (images/fonts), and game logic.  
+- Intended as a hobby / learning project — a fun way to explore game development, scripting, and asset organization.  
+- Good starting point/boilerplate if you want to build your own Godot-based arcade / survival game.
 
+## Repository Structure
 
-<!-- ABOUT -->
-## About The Project
-<br />
+/                 # root
+├── assets/        # image/sprite/font/other asset files
+├── Scenes/        # Godot scene files
+├── Scriptsss/     # GDScript game logic scripts
+├── Our Player/    # (player character resources)
+├── Fonts/         # any custom fonts
+├── images/        # standalone images / icons / sprites
+├── .editorconfig
+├── .gitignore
+├── LICENSE        # MIT license
+├── Shiba_Survival.js / .pck / other build/export files (if any)
+├── project.godot  # Godot project config
+└── …              # other config or project files
 
-[![Product Screenshot][product-screenshot]](https://waka.hackclub.com)
+## Getting Started (Run Locally)
 
-This tool can successfully measure time spent building your games or apps in Godot.
-<br />
-Here's why:
-* It differentiates between switching a scene and script
-* It counts key presses as coding and mouse clicks as building scene
-* Changing scene structure results in a heartbeat sent
-* It correctly detects OS, machine name, language, editor, files
-* It can detect your cursor line and position
-* Time is split between: Building, Coding, Testing
-* In the future it will also detect testing your projects
+To run and test the game:
 
-It works on both Linux and Windows, it wasn't tested on macOS yet
-<br />
-You can also see your time spent in the editor itself:
-[![Time in editor][time-screenshot]]
+1. Install Godot Engine (version compatible with the project — e.g. Godot 3.x or 4.x depending on project settings).  
+2. Clone this repository  
+   ```bash
+   git clone https://github.com/ItzLamo/Shiba-Survival.git
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+	3.	Open the project in Godot (open project.godot).
+	4.	Run the main scene (e.g. via main-node.tscn or whichever scene is configured as entry point).
+	5.	(Optional) Export or build the project to a runnable package, if configured in export_presets.cfg.
 
+Usage / What You Can Do
+	•	Play and test the survival / arcade gameplay as-is.
+	•	Use as a base to build your own features: new levels, enemies, scoring, UI, etc.
+	•	Learn from the structure: how scenes/scripts/assets are organized in Godot.
+	•	Use it as a learning resource for GDScript, game logic, and asset management.
 
-### Built Using
-I used the Ouch! CLI tool for decompression of files <br />
-This project was built using one simple, yet powerful language.<br />
-It required a lot of workarounds, but it was a pleasure to use it
-* [![GDScript][Godot]][Godot-url]
-* [![Ouch!][Ouch-shield]][Ouch-url]
+Built With / Technologies
+	•	Godot Engine (GDScript)
+	•	Standard project folder organization
+	•	Assets: custom fonts, images, sprites (see assets/, images/, Fonts/)
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+Why This Project / Motivation
+	•	A fun project to learn game development.
+	•	Practice structuring a game project, organizing assets and code.
+	•	Explore design of an arcade / survival game loop.
+	•	Share a starting template for others who want to build similar games.
 
-<!-- GETTING STARTED -->
-## Getting Started
-How to install and use this software? It's easy!
+Contributing
 
-### Installation
-You can either download it from the [Godot Asset Library](https://godotengine.org/asset-library/asset/3484).
-<br />Or you can manually install it, here's how to do it!
-1. Clone the repository
-    ```sh
-    git clone https://github.com/BudzioT/Godot_Super-Wakatime.git
-    ```
-2. Go into your project
-3. Insert the entire `./addons` folder into your project `res://` directory
+Feel free to open issues or pull requests if you want to:
+	•	Improve game mechanics (physics, spawning, scoring, etc.)
+	•	Add new scenes / levels / assets / UI features
+	•	Refactor code for clarity / modularity
+	•	Fix bugs or add enhancements
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
+If you contribute — please follow existing code style, and test before submitting.
 
-<!-- USAGE -->
-## Usage
-Don't know how to use this plugin? Here are the steps:
-1. Turn on the plugin in your plugins. In your `Project -> Project Settings -> Plugins -> `Click the `Enable` checkbox near this plugin
-2. If prompted for API key, provide it from Wakatime website
-3. if there is an issue with it, please manually create `~/.wakatime.cfg` file with these contents:
-    ```sh
-    [settings]
-    api_key=xxxx
-    ```
-    Where xxxx is your api key
-<br /><br />
-If you are coming from High Seas used this:
-    ```sh
-    [settings]
-    api_url = https://waka.hackclub.com/api
-    api_key=xxxx
-    ```
-4. Wakatime CLI should have been installed automatically along with Ouch! Decompression library
-5. Work on your project! You should see your results on either Wakatime or Hackatime!
-6. You can also see your time at the bottom panel
+License
 
-<p align="right">(<a href="#readme-top">top</a>)</p>
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- URLS -->
-[contributors-shield]: https://img.shields.io/github/contributors/budziot/Godot_Super-Wakatime?style=for-the-badge
-[contributors-url]: https://github.com/BudzioT/Godot_Super-Wakatime/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/budziot/Godot_Super-Wakatime?style=for-the-badge
-[forks-url]: https://github.com/BudzioT/Godot_Super-Wakatime/forks
-[stars-shield]: https://img.shields.io/github/stars/budziot/Godot_Super-Wakatime?style=for-the-badge
-[stars-url]: https://github.com/BudzioT/Godot_Super-Wakatime/stargazers
-[issues-shield]: https://img.shields.io/github/issues/budziot/Godot_Super-Wakatime?style=for-the-badge
-[issues-url]: https://github.com/BudzioT/Godot_Super-Wakatime/issues
-[license-shield]: https://img.shields.io/github/license/budziot/Godot_Super-Wakatime?style=for-the-badge
-[license-url]: https://github.com/BudzioT/Godot_Super-Wakatime/blob/master/addons/godot_super-wakatime/LICENSE
-[product-screenshot]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/0image.png
-[product-logo]: https://cloud-j4wibbzz7-hack-club-bot.vercel.app/2godotwaka2.png
-[Godot]: https://img.shields.io/badge/Godot%20Engine-478CBF?logo=godotengine&logoColor=fff&style=flat
-[Godot-url]: https://godotengine.org/
-[Ouch-shield]: https://img.shields.io/badge/Ouch!-tool-blue?label=Ouch!
-[Ouch-url]: https://github.com/ouch-org/ouch
-[time-screenshot]: https://cloud-l88kldf50-hack-club-bot.vercel.app/0image.png
+This project is licensed under the MIT License for The Hack Club
